@@ -8,7 +8,7 @@ interface hijo {
 
 export default function Form({ nombramos, setterName }: hijo) {
 
-    const [hijo, setHijo]=useState("hijo")
+    const [hijo, setHijo]=useState("form hijo")
   const random = Math.floor(Math.random() * 100);
   return (
     <>
@@ -29,6 +29,8 @@ export default function Form({ nombramos, setterName }: hijo) {
         <h2>{hijo}</h2>
         <button onClick={()=>{setHijo(hijo+"B")}}>AgregarB</button>
       </div>
+
+      
     </>
   );
 }
